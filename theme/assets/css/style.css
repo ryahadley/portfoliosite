@@ -1,0 +1,486 @@
+/*
+ * Author: Carlos Alvarez
+ * URL: http://Alvarez.is
+ *
+ * Project Name: NYC Design
+ * Version: 1.0
+ * Date: 04-20-2014
+ * URL:
+ */
+
+
+/* ==========================================================================
+   Base Styles, Bootstrap Modifications & Fonts Import
+   ========================================================================== */
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+
+::-moz-selection {
+    background: #f2c2c9;
+    color: #a4003a;
+    text-shadow: none;
+}
+
+::selection {
+    background: #16a085;
+    color: #a4003a;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+a {
+  text-decoration: none !important;
+}
+
+.gallery a {
+  color: #333 !important;
+}
+
+#hover a:hover {
+  color: #5e5e5e !important;
+}
+
+ hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.centered {
+	text-align: center
+}
+
+.mt {
+	margin-top: 80px;
+}
+
+.mb {
+	margin-bottom: 80px;
+}
+
+/* ==========================================================================
+   General styles
+   ========================================================================== */
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 0px;
+    margin: 0 auto;
+    width: 100vw;
+    height: 100%;
+
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+    color: #4a4a4a;
+}
+
+
+.navbar-brand {
+	font-weight: 700;
+}
+
+.navbar-default .navbar-brand {
+	color: #1abc9c;
+}
+
+.navbar-default {
+	background-color: transparent;
+	border-color: transparent;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	color: #1abc9c;
+	background-color: transparent;
+	border-bottom: 2px solid #1abc9c
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: #1abc9c;
+}
+
+#plus {
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  background-color: #ef473a;
+  display: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#plus p {
+  padding: 10px 30px 0px 30px;
+  font-size: 14px;
+}
+
+#big {
+  font-size: 16px;
+}
+
+
+#bottom {
+  margin-top: -100px;
+}
+
+#flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+#site {
+  margin-top: -10px;
+  font-size: 16px;
+  transition: font-size 1s;
+}
+
+/* ==========================================================================
+   Wrap Sections
+   ========================================================================== */
+
+#headerwrap {
+	background: url(../img/portfolio/back.jpg) no-repeat center top;
+	margin-top: -70px;
+	padding-top: 250px;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 650px;
+	width: 100%;
+
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#headerwrap h1 {
+	color:#ffffff;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	letter-spacing: 4px;
+	font-size: 80px;
+	font-weight: bold;
+}
+
+#headerwrap h4 {
+	font-weight: 400;
+	color: #ffffff
+}
+
+#social {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #f2f2f2;
+}
+
+#social i {
+	font-size: 40px;
+	color: #4a4a4a;
+}
+
+#social i:hover {
+	color: #1abc9c
+}
+
+#footerwrap {
+	padding-top: 70px;
+	padding-bottom: 50px;
+	background-color: #2f2f2f;
+}
+
+#footerwrap p {
+	color: #f2f2f2;
+	margin-left: 10px;
+}
+
+#workwrap {
+	background: url(../img/work.jpg) no-repeat center top;
+	margin-top: -70px;
+	padding-top: 250px;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 650px;
+	width: 100%;
+
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#workwrap h1 {
+	color:#ffffff;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	letter-spacing: 4px;
+	font-size: 80px;
+	font-weight: bold;
+}
+
+#workwrap h4 {
+	font-weight: 400;
+	color: #ffffff
+}
+
+#aboutwrap {
+	background: url(../img/portfolio/back.jpg);
+	margin-top: -70px;
+	padding-top: 250px;
+	text-align:center;
+	background-size: auto;
+  background-position: left;
+	min-height: 550px;
+	width: 100%;
+
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#hover > li:hover {
+  color: #5e5e5e;
+}
+
+#me {
+  width: 50%;
+  height: 50%;
+  border-radius: 100%;
+  margin-bottom: 100px;
+}
+
+#myself p{
+  margin-bottom: 30px;
+}
+
+#nametag {
+  margin-bottom: 50px;
+}
+
+/* Gallery */
+.gallery {
+	margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+/*.gallery img:hover {
+	opacity: 0.4;
+}*/
+
+.gallery img {
+  /*width: 80vw;
+  height: 30vh;
+  max-width: 600px;
+  max-height: 400px;*/
+}
+
+.technologies {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 50px;
+}
+
+.bottomcontainer {
+  text-align: center;
+  background-color: #1F2123
+}
+
+.bottomcontainer h2 {
+  padding-top: 50px;
+}
+
+.language {
+  padding: 50px;
+  margin: 30px;
+  border: 1px solid #1abc9c;
+}
+
+#f1_container {
+  position: relative;
+  margin: 30px 30px 60px 30px;
+  width: 200px;
+  height: 150px;
+  z-index: 1;
+}
+#f1_container {
+  perspective: 1000;
+}
+#f1_card {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.7s linear;
+}
+#f1_container:hover #f1_card {
+  transform: rotateX(180deg);
+}
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.face.back {
+  display: block;
+  transform: rotateX(180deg);
+  box-sizing: border-box;
+  padding-top: 30%;
+  color: #1abc9c;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #5e5e5e;
+  border: none;
+}
+
+.one {
+  background: url('../img/languages/html5.png') no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.two {
+  background: url('../img/languages/javascript.png') no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+
+.three {
+  background: url('../img/languages/css-icon.png') no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.four {
+  background: url('../img/languages/jquery.png') no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.five {
+  background: url('../img/languages/mongo.png') no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.six {
+  background: url('../img/languages/express.png') no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.seven {
+  background: url('../img/languages/angular-icon.svg') no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.eight {
+  background: url('../img/languages/nodejs.png') no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.nine {
+  background: url('../img/languages/giiit.png') no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.ten {
+  background: url('../img/languages/ionic.png') no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.eleven {
+  background: url('../img/languages/sass.png') no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.twelve {
+  background: url('../img/languages/gulp.png') no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+@media(max-width: 750px) {
+  .gallery img {
+    width: 80vw;
+    max-width: 600px;
+    max-height: 400px;
+  }
+
+  #plus {
+    width: 80vw;
+    margin: 0 auto;
+    left: 10%;
+    /*position: absolute;*/
+    background-color: #ef473a;
+    display: none;
+    cursor: pointer;
+  }
+
+  #plus p {
+    font-size: 20px;
+  }
+
+  #big {
+    font-size: 24px;
+  }
+
+  #me {
+    width: 80%;
+    height: 80%;
+  }
+
+  .collapse {
+    background-color: #4a4a4a;
+  }
+}
+
+@media(max-width: 600px) {
+  #plus p {
+    font-size: 10px;
+  }
+  #big {
+    font-size: 14px;
+  }
+}
