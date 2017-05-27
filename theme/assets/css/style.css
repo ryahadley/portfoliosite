@@ -330,15 +330,8 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
 }
 
-/*.gallery img:hover {
-	opacity: 0.4;
-}*/
-
-.gallery img {
-  /*width: 80vw;
-  height: 30vh;
-  max-width: 600px;
-  max-height: 400px;*/
+.gallery img:last-of-type {
+  background-color: lavender;
 }
 
 .technologies {
@@ -480,10 +473,6 @@ h1, h2, h3, h4, h5, h6 {
     width: 80vw;
     max-width: 600px;
     max-height: 400px;
-  }
-
-  .gallery img:last-of-type {
-    background-color: lavender;
   }
 
   #plus {
