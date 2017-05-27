@@ -1,12 +1,4 @@
 $(document).ready(function() {
-//   $('.gallery').hover(
-//     function() {
-//       $('.hide').css('display', 'block');
-//     }, function() {
-//       $('.hide').css('display', 'none');
-//     }
-//   );
-
 
 $(function(){
     $(".gallery").hover(function(){

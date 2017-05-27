@@ -139,8 +139,8 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 40px;
 }
 
-.lavender {
-  background: lavender;
+.margin-auto {
+  margin: auto;
 }
 
 #plus {
@@ -148,6 +148,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
   top: 0px;
   left: 0px;
+  overflow: scroll;
   position: absolute;
   background-color: #ef473a;
   display: none;
@@ -481,10 +482,14 @@ h1, h2, h3, h4, h5, h6 {
     max-height: 400px;
   }
 
+  .gallery img:last-of-type {
+    background-color: lavender;
+  }
+
   #plus {
     width: 80vw;
     margin: 0 auto;
-    left: 10%;
+    left: 15px;
     /*position: absolute;*/
     background-color: #ef473a;
     display: none;
@@ -511,7 +516,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media(max-width: 600px) {
   #plus p {
-    font-size: 10px;
+    font-size: 12px;
   }
   #big {
     font-size: 14px;
